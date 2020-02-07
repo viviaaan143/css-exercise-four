@@ -1,4 +1,4 @@
-*, *:before, *:after {
+* {
   box-sizing:border-box;
 }
 
@@ -19,7 +19,7 @@ h1 {
   font-family: roboto condensed;
   font-weight: 100;
   text-transform: uppercase;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 h3 {
@@ -28,80 +28,82 @@ h3 {
   font-size: 18px;
 }
 
-.container {
+.row{
   display: inline-block;
   background-color: #b8b8b8;
-  grid-gap: 50px;
-  padding-top: 40px;
+  grid-gap:50px;
+  padding-top:40px;
+  padding-bottom:600px;
+  width: 100%;
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .baku {
-  height: 300px;
+  height: 250px;
   background-image: url(https://raw.githubusercontent.com/viviaaan143/css-exercise-four/master/images/baku.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  border-bottom: 25px solid #b8b8b8;
+  border: 10px solid #b8b8b8;
   display:inline-block;
 }
 
 .london {
-  height: 300px;
+  height: 250px;
   background-image: url(https://raw.githubusercontent.com/viviaaan143/css-exercise-four/master/images/london.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom: 25px solid #b8b8b8;
+  border: 10px solid #b8b8b8;
   display:inline-block;
 }
 
 .madrid {
-  height: 300px;
+  height: 250px;
   background-image: url(https://raw.githubusercontent.com/viviaaan143/css-exercise-four/master/images/madrid.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom: 25px solid #b8b8b8;
+  border: 10px solid #b8b8b8;
   display:inline-block;
 }
 
 .rome {
-  height: 300px;
+  height: 250px;
   background-image:url(https://raw.githubusercontent.com/viviaaan143/css-exercise-four/master/images/rome.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom: 25px solid #b8b8b8;
+  border: 10px solid #b8b8b8;
   display:inline-block;
 }
+
 .preview{
-  float:left;
-  margin: 3%;
-  padding: 2%;
-  width: 40%;
+  /* padding: 2%; */
+  width: 50%;
   display: inline-block;
-  /* width: 50%; */
-  /* margin: 10px; */
 }
 
 .column {
-  margin: 3%;
-  width: 100%;
-  column-count:2
-  display:inline-block;
+  float:left;
+  padding:20px;
+  width:25%;
 }
 
 @media screen and (min-width: 575px) {
   .column {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 900px) {
 .column {
-  width: 100%;
-  margin: 0 auto;
+  width: 50%;
+  }
 }
